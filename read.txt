@@ -1,0 +1,32 @@
+Vegetable & fruits Shopping Cart With Php and MySqli Database
+DATABASE NAME:-productdb
+Tablename:-producttb
+CREATE TABLE tablename
+ (id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  product_name VARCHAR (255) NOT NULL,
+  product_price FLOAT,
+  product_image VARCHAR (100))
+  
+INSERT INTO Producttb (product_name, product_price, product_image)
+        VALUES ('FRUIT & VEG BUCKET',1999,'./upload/product5.jpg'),
+                        ('PEACH',470,'./upload/peach.jpg'),
+                        ('RED SAPSICUM',269,'./upload/product1.jpg'),
+                        ('GRAPES',645,'./upload/grapes.jpg');
+Do this before execution.
+
+If not you'll get this error!!
+Warning
+: mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in
+C:\xampp\htdocs\VMartindex.php
+on line
+71
+then all you have to do is run this given query means Add data in the table and make sure the query returning at least one record  
+just pass this entries with atleast one record.
+(NOTE this is only if you have note inserted the values in database before execution thats why you will be getting this error make sure to insert 
+the value on database before execution or do this step.)
+
+INSERT INTO Producttb (product_name, product_price, product_image)
+        VALUES ('FRUIT & VEG BUCKET',1999,'./upload/product5.jpg'),
+                        ('PEACH',470,'./upload/peach.jpg'),
+                        ('RED SAPSICUM',269,'./upload/product1.jpg'),
+                        ('GRAPES',645,'./upload/grapes.jpg');
